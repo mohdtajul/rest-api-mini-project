@@ -9,15 +9,15 @@ const methodOverride = require('method-override')
 
 let posts= [
     {   id: uuidv4(),
-        username: "mohd tajul",
+        username: "apna college",
         content: "i love coding"
     },
      {  id: uuidv4(),
-        username: "mohd talib",
+        username: "code with harry",
         content: "i love gaming"
     },
      {  id: uuidv4(),
-        username: "mohd kamil",
+        username: "chai or code",
         content: "i love teaching"
     }
 ]
