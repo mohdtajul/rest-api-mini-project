@@ -32,7 +32,6 @@ app.use(express.static(path.join(__dirname,"public")))
 
 /// REST API Calls 
 app.get("/posts", (req,res)=>{
-    // res.send("server is running well!")
     res.render("index.ejs", {posts})
 
 });
@@ -51,7 +50,6 @@ app.post("/posts",(req,res)=>{
 app.get("/posts/:id", (req,res)=>{
     let {id} = req.params;
     let post = posts.find((p)=> id === p.id);
-    // console.log(post);
     // res.send("request is working")
     res.render("show.ejs", {post})
 });
